@@ -10,6 +10,10 @@
     "prepare": "husky",
     "test:unit": "vitest"
   },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.{js,vue}": "eslint"
+  },
   "dependencies": {
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
@@ -26,6 +30,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-vue": "^9.24.0",
     "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "3.2.5",
     "vite": "^5.1.5",
     "vitest": "^1.4.0"
